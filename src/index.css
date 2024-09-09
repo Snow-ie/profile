@@ -1,13 +1,102 @@
-body {
+/* Reset margin, padding, and apply box-sizing globally */
+* {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+/* Body styling */
+body {
+  background-color: hsl(0, 0%, 8%);
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  font-family: Arial, sans-serif;
+}
+
+/* Profile picture styling */
+.profile-pic {
+  width: 50vw;
+  height: 50vh;
+  margin: 1.25rem 0;
+}
+
+/* Container styles */
+.container {
+  max-width: 500px;
+  padding: 1.5rem;
+  border-radius: 10px;
+  text-align: center;
+}
+
+/* Heading inside the container */
+.container h2 {
+  font-size: 1.25rem;
+  margin-bottom: 1rem;
+}
+
+/* Text span inside the container */
+.container p {
+  display: block;
+  font-size: 1rem;
+  margin: 0.5rem 0 1rem;
+}
+
+/* Button styling */
+button {
+  width: 100%;
+  padding: 1rem;
+  font-size: 1rem;
+  font-weight: bold;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  background-color: hsl(0, 0%, 20%);
+  color: white;
+  border: none;
+  transition: background-color 0.3s ease;
+}
+button span {
+  /* display: flex; */
+  align-items: center;
+  margin: 1rem;
+}
+
+button:hover {
+  background-color: hsl(0, 0%, 50%);
+}
+
+/* Details section */
+.details {
+  margin-top: 1.25rem;
+}
+
+.details p {
+  font-size: 0.875rem; /* Use rem for consistent sizing */
+  margin-bottom: 1.25rem;
+}
+
+/* Icon styles */
+.icons ul {
+  display: flex;
+  gap: 1.25rem;
+  justify-content: center;
+  /* padding: 0; Remove default padding */
+}
+
+.icons li {
+  list-style: none;
+}
+
+.icons a {
+  text-decoration: none;
+  color: white;
+  font-size: 1.5rem;
+  transition: color 0.3s ease;
+}
+
+.icons a:hover {
+  color: hsl(0, 0%, 90%);
 }
